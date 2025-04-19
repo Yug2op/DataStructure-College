@@ -11,6 +11,7 @@ public class NumberOfChar {
         int whiteSpaceCount = 0;
         while (true) {
              str = sc.next().charAt(0);
+             sc.close();
              for (int i = 0; i < 1; i++) {
                 
                 if (str == ' ') {
@@ -39,7 +40,6 @@ public class NumberOfChar {
 
        
            
-            
             
     }
 }
