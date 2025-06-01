@@ -17,7 +17,7 @@ public class BinarySearchLastOccurence {
         int ans = -1;
 
         while (start <= end) {
-            int m = start + (end - start) / 2;
+            int m = (start + end)/ 2;
             if (arr[m] < target) {
                 start = m + 1;
             } else if (arr[m] > target) {
@@ -30,7 +30,7 @@ public class BinarySearchLastOccurence {
         if (ans == -1) {
             System.out.print("Element not found.");
         } else {
-            System.out.print("First Element is found at index: " + ans);
+            System.out.print("Last Element is found at index: " + ans);
         }
 
         sc.close();
